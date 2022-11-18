@@ -1,4 +1,4 @@
-def bmi(weight, height)
+ef bmi(weight, height)
   bmi = weight/(height**2)
   if bmi<=18.5
     return "Underweight"
@@ -9,7 +9,7 @@ def bmi(weight, height)
   else
     return "Obese"
   end
-end
+
 
 puts bmi(80,1.80)
 
