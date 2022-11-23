@@ -4,7 +4,7 @@ def total_marks(student_attempt,actual_answers)
     marks_per_que = 3
     i=0
     while i<length
-        if student_attempt[i]==nil
+        if student_attempt[i]==0
             actual_answers.delete_at(i)
             student_attempt.delete_at(i)
         end
