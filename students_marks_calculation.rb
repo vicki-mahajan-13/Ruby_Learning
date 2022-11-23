@@ -1,25 +1,23 @@
 def total_marks(student_attempt,actual_answers)
-    i=0
-    ans=actual_answers
+    length=actual_answers.length
     count=0
-    total_que = 5
     marks_per_que = 3
-    full_marks = total_que*marks_per_que
-    while i<actual_answers.length
+    i=0
+    while i<length
         if student_attempt[i]==nil
-            ans.delete_at(i)
+            actual_answers.delete_at(i)
             student_attempt.delete_at(i)
         end
         i+=1
     end
     i=0
-    while i<ans.length
-        if student_attempt[i]==ans[i]
+    while i<actual_answers.length
+        if student_attempt[i]==actual_answers[i]
             count+=1
         end
         i+=1
     end
-    return count*marks_per_que-(ans.length-count)
+    return count*marks_per_que-(actual_answers.length-count)
 end
 
 
