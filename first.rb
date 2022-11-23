@@ -1,4 +1,4 @@
-require 'byebug'
+
 a = [1,2,34,4,5,6,7,8,9]
 
 class Integer
