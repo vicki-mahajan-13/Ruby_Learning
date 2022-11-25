@@ -24,7 +24,6 @@ def black_or_white_key(key_press_count)
     end
     return key_group1.flatten[key_press_count-1]
   end
-
 end
 
 puts black_or_white_key(100)
