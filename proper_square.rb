@@ -18,6 +18,7 @@ end
 
 puts is_square(4)
 
+
 =begin
 Test.assert_equals (is_square (-1)), false, "-1 is not a perfect square"
 Test.assert_equals (is_square  0),   true,  "0 is a perfect square (0 * 0)"
