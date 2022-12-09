@@ -30,4 +30,4 @@ def seperate(connections)
 end
 
 
-print distance(["vicky:shivam", "shivam:mahesh", "mahesh:prasoon", "prasoon:tinku", "shivam:tinku"], "tinku", "vicky")
+print distance(["vicky:shivam", "shivam:mahesh", "mahesh:prasoon", "prasoon:tinku", "shivam:tinku", shivam:], "tinku", "vicky")
