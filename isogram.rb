@@ -4,3 +4,6 @@ end
 
 
 puts is_isogram("vicki mahajan")
+
+=begin
+=end
