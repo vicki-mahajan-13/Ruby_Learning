@@ -1,0 +1,20 @@
+def cup_and_balls(b, arr)
+  i=0
+  cups=[1,2,3]
+  arr=arr.flatten
+  length=arr.length
+  while i<length
+    cups[arr[i]-1], cups[arr[i+1]-1] = cups[arr[i+1]-1], cups[arr[i]-1]
+    i+=2
+  end
+  cups.find_index(b)+1
+end
+
+print cup_and_balls(2,[[1,2]])
+
+
+=begin
+    Test.assert_equals(cup_and_balls(2,[[1,2]]), 1)
+    Test.assert_equals(cup_and_balls(1,[[2,3],[1,2],[1,2]]), 1)
+    Test.assert_equals(cup_and_balls(2,[[1,3],[1,2],[2,1],[2,3]]), 3)
+=end
